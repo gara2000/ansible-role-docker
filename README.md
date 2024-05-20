@@ -1,4 +1,4 @@
-DNSSERVER
+Docker Role
 =========
 
 This role installs and configures docker on the target server
@@ -21,7 +21,7 @@ Example Playbook
 
 ```bash
 - hosts: servers
-  vars:
+  become: yes
   roles:
       - gara2000.docker
 ```
